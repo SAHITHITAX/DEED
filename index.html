@@ -122,10 +122,10 @@
 
 
     function downloadAgreementAsWord() {
-        const ownerName = document.getElementById('ownerName').value;
-        const ownerDetails = document.getElementById('ownerDetails').value;
-        const tenantName = document.getElementById('tenantName').value;
-        const tenantDetails = document.getElementById('tenantDetails').value;
+        const p1 = document.getElementById('p1').value;
+        const p1occ = document.getElementById('p1occ').value;
+        const p2 = document.getElementById('p2').value;
+        const p2occ = document.getElementById('p2occ').value;
         const businessName = document.getElementById('businessName').value;
         const propertyAddress = document.getElementById('propertyAddress').value;
         const monthlyRent = document.getElementById('monthlyRent').value;
@@ -136,7 +136,7 @@
         const leaseDuration = document.getElementById('leaseDuration').value;
         
 	const place = document.getElementById('place').value;
-	const father= document.getElementById('father').value;
+	const p1f= document.getElementById('p1f').value;
 	const fathert= document.getElementById('fathert').value;
 	const age1= document.getElementById('age1').value;
 	const age2= document.getElementById('age2').value;
@@ -156,34 +156,20 @@
 
                 <h3 style="text-align:center; text-decoration:underline;">RENTAL AGREEMENT</h3>
 
-                <p style="text-align:justify;">This Rental Agreement is made and executed on this day of <b>${new Date().toLocaleDateString()}</b>, at <b>${place}</b> and between:</p>
+                <p style="text-align:justify;">This Partnership Deed is made and executed on the 30th day of <b>${new Date().toLocaleDateString()}</b>, at <b>${place}</b> and between:</p>
 
-                <p style="text-align:justify; margin: 35px; padding-left: 40px;"><b>Sri/Smt.${ownerName}</b>, S/o or D/o <b>${father}</b>, aged about <b>${age1}</b> years, Occupation  <b>${ownerDetails}</b>, R/o. ${owneradd}.</p>
+                <p style="text-align:justify; margin: 35px; padding-left: 40px;"><b>Sri/Smt.${p1}</b>, S/o or D/o <b>${p1f}</b>, aged about <b>${age1}</b> years, Occupation  <b>${p1occ}</b>, R/o. ${p1add}.</p>
 		
 
-		<p style="text-align:justify;">(Hereinafter called the <b>Owner ... Of First Party</b>)</p>
+		<p style="text-align:justify;">(Hereinafter called the <b> First Party</b>)</p>
                 
 		<p style="text-align:center; text-decoration:underline;"><b>AND</b></p>
 
-                <p style="text-align:justify; margin: 35px ; padding-left: 40px;"><b>Sri/Smt.${tenantName}</b>, S/o or D/o <b>${fathert}</b>, aged about <b>${age2}</b> years, Occupation   <b>${tenantDetails}</b>,R/o. ${tadd}. authorized representative of <b>${businessName}</b>. </p>
+                <p style="text-align:justify; margin: 35px ; padding-left: 40px;"><b>Sri/Smt.${p2}</b>, S/o or D/o <b>${p2f}</b>, aged about <b>${age2}</b> years, Occupation   <b>${p2occ}</b>,R/o. ${p2add}. </p>
 		
-		<p style="text-align:justify;">(Hereinafter called the <b>Tenant ... Of Second Party</b>)</p>
+		<p style="text-align:justify;">(Hereinafter called the <b>Of Second Party</b>)</p>
                 
-		<p style="text-align:justify;margin: 15px 0; text-indent: 40px;">Whereas the First Party is the sole and absolute owner and possessor of the property situated at <b>${propertyAddress}.</b> </p>
-		<p style="text-align:justify;" > (Hereinafter called the <b>Schedule of Property</b>).</p>
-                <p style="text-align:justify;margin: 15px 0; text-indent: 40px;">Whereas the Tenant has approached the First Party and requested to let out the above-said property for running their business under the name and style of <b>${businessName}</b>. First Party/Owner has agreed to let out the same on monthly rent basis and fixed the for which the First rent at the rate of <b>Rs.${monthlyRent}/-</b> per month on the following terms and conditions.</p>
-
-                <h3 style="text-align:center;text-decoration:underline">NOW THIS AGREEMENT WITNESSETH AS FOLLOWS</h3>
-
-               <ol style="text-align:justify;">
-    <li style="margin-bottom: 10px;">That the Second Party /Tenant has agreed to pay the rent at the rate of <b>Rs.${monthlyRent}/-</b> per month excluding the electricity & water consumption charges etc. to the above said scheduled premises to the First Party/Owner. The rent is payable on or before the 10th of every English calendar month.</li>
-
-    <li style="margin-bottom: 10px;">That the Second Party/Tenant has deposited <b>Rs.${advanceAmount}/-</b> towards advance with the First Party/Owner, and the same shall be refundable at the time of vacating the said premises after deducting any arrears/damages, without carrying any interest, if any, to the Tenant.</li>
-
-    <li style="margin-bottom: 10px;">That the Tenancy shall commence from <b>${startDate}</b>, and this agreement shall be valid for (<b>${leaseDuration}</b>) months. After completion of (<b>${leaseDuration}</b>) months, the same shall be renewed for a further period.</li>
-
-    <li style="margin-bottom: 10px;">That the First Party/Owner has handed over the above said leased premises to the Tenant on <b>${startDate}</b>. The Tenant has agreed to obtain the necessary permissions from the concerned authorities to run the above said business.</li>
-
+		<ol.
     <li style="margin-bottom: 10px;">That if the Second Party/Tenant fails to pay the rent for <b>two months</b> continuously, it shall amount to willful default, and he shall be liable for eviction.</li>
 
     <li style="margin-bottom: 10px;">That the First Party/Owner has agreed to pay the property tax to the concerned authorities in respect of the leased premises.</li>
